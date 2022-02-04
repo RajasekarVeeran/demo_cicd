@@ -7,7 +7,14 @@ services:
     image: nginx-custom
     ports:
       - "80:80"
+	  networks:
+      - net
   web:
     image: httpd
     volumes:
       - "./html:/usr/local/apache2/htdocs/"
+	  networks:
+      - net
+	  
+networks:
+  net:
