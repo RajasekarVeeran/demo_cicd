@@ -15,6 +15,6 @@ services:
       - "./html:/usr/local/apache2/htdocs/"
     networks:
       - net
-	  
+
 networks:
   net:
